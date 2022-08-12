@@ -1,0 +1,11 @@
+frontend:
+  type: frontend
+  index_file_name: index.html
+  url_path: /
+  repo_path: frontend
+  assets_path: dist
+  local_packages: ["target"]
+  #install: ["npm", "install"]
+  build: ["trunk", "build"]
+  dev: ["trunk", "serve", "--address", "0.0.0.0", "--port", "$PORT"]
+  
